@@ -48,7 +48,7 @@ header::after{ /* Torna o BG de head tranlucido */
 }
 
 #cabeçalho img{
-    padding: 2% 3% 2% 4%;
+    padding: 3% 3% 2% 5%;
     text-align: left;
     height: 10vw;
     width: 15vw;
@@ -111,22 +111,23 @@ header img{
 /* Sobre nós */
 
 #sobre-nos{
-    background: linear-gradient(to top, #B22222, rgb(10,10,10));
-    color: goldenrod;
+    background-color: #8B0000;
+    color: whitesmoke;
     text-shadow: 1px 1px 1px black;
     text-align: justify;
-    display: inline-block;
-    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 #sobre-nos h1{
     text-align: center;
+    width: 100%;
     padding-top: 2%;
     font-size: 4vw;
 }
 
 #sobre-nos p{
-    display: inline-block;
     padding: 3% 3% 3% 5%;
     width: 40%;
     padding-top: 5%;
@@ -134,8 +135,11 @@ header img{
 }
 
 #sobre-nos img {
-    display: inline-block;
-    width: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 50%;
+    box-shadow: 1px 1px 3px 3px goldenrod;
+    border-radius: 10px;
 }
 
 /* Tratamentos */
@@ -193,7 +197,58 @@ header img{
     margin-bottom: 5%;
     margin-right: 5%;
     margin-left: 5%;
+    box-shadow: 1px 1px 3px 3px whitesmoke;
+
 }
+
+
+/* BOTÕES */
+
+.botao {
+    text-decoration: none;
+    font-size: 2vw;
+    color: whitesmoke;
+    padding: 2%;
+    margin: 5%;
+    border: 0 solid;
+    box-shadow: inset 0 0 20px rgba(218, 165, 32, 0.8);
+    outline: 1px solid;
+    outline-color: rgba(191, 194, 25, 0.8);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  } 
+  
+.botao:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(218, 165, 32, .8), 0 0 20px rgba(218, 165, 32, .5);
+    outline-color: rgba(218, 165, 32, 0);
+    outline-offset: 15px;
+    text-shadow: 2px 2px 2px black; 
+  }
+
+  .botao2 {
+    text-decoration: none;
+    font-size: 2vw;
+    color: black;
+    padding: 2%;
+    margin: 5%;
+    border: 0 solid;
+    box-shadow: inset 0 0 20px rgba(218, 165, 32, 0.8);
+    outline: 1px solid;
+    outline-color: rgba(191, 194, 25, 0.8);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  } 
+  
+.botao2:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(218, 165, 32, .8), 0 0 20px rgba(218, 165, 32, .5);
+    outline-color: rgba(218, 165, 32, 0);
+    outline-offset: 15px;
+    text-shadow: 2px 2px 2px whitesmoke; 
+  }
 
 #divisão{
     width: 100%;
@@ -208,7 +263,7 @@ header img{
     background-position: center center;
     z-index: 1;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
     text-align: center;
     color: #B78628;
     text-shadow: 1px 1px 1px black;
@@ -242,12 +297,131 @@ header img{
 
 #tratamentos2 p{
     font-size: 2vw;
-    width: 25%;
-    padding: 3% 0% 5% 0%;
+    width: 50%;
+    padding: 0% 0% 0% 0%;
     line-height: 200%;
 }
 
 #tratamentos2 img {
-    width: 20%;
+    width: 30%;
+    margin: 5%;
     border-radius: 10px;
+    box-shadow: 1px 1px 3px 3px whitesmoke;
+
+}
+
+/* Resultados */
+
+
+#resultados {
+    width: 100%;
+    display: flex;
+    background-color: rgba(250, 30, 55, .2);
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#resultados h1{
+    width: 100%;
+    font-size: 4vw;
+    padding: 5%;
+}
+
+#resultados img {
+    width: 40%;
+    border-radius: 10px;
+    margin: 5%;
+    box-shadow: 1px 1px 3px 3px goldenrod;
+}
+
+#resultados p{
+    text-shadow: 1px 1px 1px black;
+    width: 50%;
+}
+
+/* Proprietária */
+
+#proprietária {
+    background-color: whitesmoke;
+    display: flex;
+    text-align: justify;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#proprietária h1{
+    text-align: center;
+    font-size: 4vw;
+    color: black;
+    width: 100%;
+    padding: 5% 5% 3% 5%;
+}
+
+#proprietária p{
+    font-size: 2vw;
+    padding: 0 5% 0 5%;
+    width: 50%;
+}
+
+#proprietária img{
+    width: 35%;
+    border-radius: 50%;
+    margin: 0 0 5% 0;
+    box-shadow: 1px 1px 5px 5px goldenrod;
+}
+/* Contato */
+
+#contato {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    color: whitesmoke;
+}
+
+#contato h1{
+    width: 100%;
+    font-size: 4vw;
+    padding: 5%;
+}
+
+#contato p{
+    font-size: 3vw;
+    padding: 5%;
+}
+
+#contato img{
+    width: 10%;
+    border-radius: 10px;
+    margin: 0%;
+    box-shadow: 1px 1px 3px 3px goldenrod;
+}
+
+#contato a{
+    width: 100%;
+    font-size: 2vw;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 5% 0 5% 0;
+}
+
+/* Rodapé */
+
+footer{
+    background-color: black;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+    text-shadow: 1px 1px 1px black;
+    padding: 1% 0 1% 0%;
 }
